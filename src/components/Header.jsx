@@ -13,7 +13,7 @@ const Header = () => {
     ];
 
     return (
-        <header className="border-b border-red-200">
+       <header className="bg-gradient-to-r from-blue-200 via-sky-100 to-white border-b border-blue-300 shadow-md">
             <div className="container mx-auto px-4">
                 <div className="flex items-center justify-between h-20">
                     {/* Logo */}
