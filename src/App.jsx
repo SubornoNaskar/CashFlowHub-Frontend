@@ -7,6 +7,7 @@ import Filter from "./pages/Filter.jsx";
 import Login from "./pages/Login.jsx";
 import Signup from "./pages/SignUp.jsx";
 import {Toaster} from "react-hot-toast";
+import LandingPage from "./pages/LandingPage.jsx";
 
 const App = () => {
     return (
