@@ -9,7 +9,7 @@ import toast from "react-hot-toast";
 import {LoaderCircle} from "lucide-react";
 import ProfilePhotoSelector from "../components/ProfilePhotoSelector.jsx";
 import uploadProfileImage from "../util/uploadProfileImage.js";
-//import Header from "../components/Header.jsx";
+import Header from "../components/Header.jsx";
 
 const Signup = () => {
     const [fullName, setFullName] = useState("");
