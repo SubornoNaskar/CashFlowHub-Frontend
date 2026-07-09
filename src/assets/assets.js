@@ -7,7 +7,6 @@ export const assets = {
     logo,
     login_bg,
   
-
 }
 
 export const SIDE_BAR_DATA = [
