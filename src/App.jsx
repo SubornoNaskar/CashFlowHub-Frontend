@@ -22,7 +22,7 @@ const App = () => {
                     <Route path="/category" element={<Category />} />
                     <Route path="/filter" element={<Filter />} />
                     <Route path="/login" element={<Login />} />
-                    <Route path="/signup" element={<SignUp />} />
+                    <Route path="/signup" element={<Signup />} />
                 </Routes>
             </BrowserRouter>
         </>
