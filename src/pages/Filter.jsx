@@ -99,7 +99,7 @@ const Filter = () => {
                         <h5 className="text-lg font-semibold">Transactions</h5>
                     </div>
                     {transactions.length === 0 && !loading? (
-                        <p className="text-gray-500">Select the filters and click apply to filter the transactions</p>
+                        <p className="text-gray-500">Use the filters above to search, sort, and explore your income and expense records.</p>
                     ): ""}
                     {loading ? (
                         <p className="text-gray-500">Loading Transactions</p>

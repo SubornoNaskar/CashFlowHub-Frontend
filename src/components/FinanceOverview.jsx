@@ -1,6 +1,6 @@
 import CustomPieChart from "./CustomPieChart.jsx";
 import {addThousandsSeparator} from "../util/util.js";
-
+import bg_pic from "../assets/money.jpg";
 const FinanceOverview = ({totalBalance, totalIncome, totalExpense}) => {
     const COLORS = ["#7620b7", "#c31016", "#05994a"];
 
@@ -10,10 +10,11 @@ const FinanceOverview = ({totalBalance, totalIncome, totalExpense}) => {
         { name: "Total Income", amount: totalIncome },
     ];
     return (
-        <div className="card">
+        <div className="card bg-gradient-to-r from-blue-200 via-sky-100 to-white border border-blue-300 shadow-md">
             <div className="flex items-center justify-between">
                 <h5 className="text-lg">Financial Overview</h5>
             </div>
+
 
             <CustomPieChart
                 data={balanceData}
@@ -23,6 +24,7 @@ const FinanceOverview = ({totalBalance, totalIncome, totalExpense}) => {
                 showTextAnchor
             />
         </div>
+       
     )
 }
 

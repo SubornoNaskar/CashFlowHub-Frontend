@@ -13,14 +13,27 @@ const Header = () => {
     ];
 
     return (
-       <header className="bg-gradient-to-r from-blue-200 via-sky-100 to-white border-b border-blue-300 shadow-md">
-            <div className="container mx-auto px-4">
-                <div className="flex items-center justify-between h-20">
+       <header className="bg-gradient-to-r from-blue-400 via-sky-40 to-pink-200 border-b border-blue-300 shadow-md">
+            <div className="container mx-auto px-2">
+                <div className="flex items-center justify-between h-22">
                     {/* Logo */}
-                    <div className="flex items-center gap-2">
-                        <img src={assets.logo} alt="logo" className="h-10 w-10" />
-                        <span className="text-lg font-bold text-black truncate">CashFlowHub</span>
-                    </div>
+                    <div className="flex items-center gap-4 -ml-8">
+    <img
+        src={assets.logo}
+        alt="logo"
+        className="h-20 w-20 object-contain"
+    />
+
+    <div className="flex flex-col">
+        <span className="text-2xl font-bold text-black">
+            CashFlowHub
+        </span>
+
+        <p className="text-sm font-semibold text-purple-950 tracking-wide mt-1">
+            Track • Save • Grow
+        </p>
+    </div>
+</div>
 
                     {/* Desktop Navigation */}
                     <nav className="hidden lg:flex items-center space-x-8">

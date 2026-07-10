@@ -9,7 +9,7 @@ import {
 } from 'recharts';
 import {addThousandsSeparator} from "../util/util.js";
 
-const CustomLineChart = ({ data }) => {
+const CustomLineChart = ({ data,color }) => {
     const CustomTooltip = ({ active, payload, label }) => {
         if (active && payload && payload.length) {
             const dataPoint = payload[0].payload;
@@ -63,9 +63,9 @@ const CustomLineChart = ({ data }) => {
             <ResponsiveContainer width="100%" height={300}>
                 <AreaChart data={data}>
                     <defs>
-                        <linearGradient id="expenseGradient" x1="0" y1="0" x2="0" y2="1">
-                            <stop offset="5%" stopColor="#875cf5" stopOpacity={0.4} />
-                            <stop offset="95%" stopColor="#875cf5" stopOpacity={0} />
+                        <linearGradient id="chartGradient" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="5%" stopColor={color} stopOpacity={0.4} />
+                            <stop offset="95%" stopColor={color} stopOpacity={0} />
                         </linearGradient>
                     </defs>
 
@@ -77,10 +77,10 @@ const CustomLineChart = ({ data }) => {
                     <Area
                         type="monotone"
                         dataKey="totalAmount"
-                        stroke="#875cf5"
-                        fill="url(#expenseGradient)"
+                        stroke={color}
+                        fill="url(#chartGradient)"
                         strokeWidth={3}
-                        dot={{ r: 3, fill: "#ab8df8" }}
+                        dot={{ r: 4, fill: color }}
                     />
                 </AreaChart>
             </ResponsiveContainer>

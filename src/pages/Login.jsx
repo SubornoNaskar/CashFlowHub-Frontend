@@ -7,7 +7,7 @@ import axiosConfig from "../util/axiosConfig.jsx";
 import {API_ENDPOINTS} from "../util/apiEndpoints.js";
 import {AppContext} from "../context/AppContext.jsx";
 import {LoaderCircle} from "lucide-react";
-//import Header from "../components/Header.jsx";
+import Header from "../components/Header.jsx";
 
 const Login = () => {
     const [email, setEmail] = useState("");

@@ -43,8 +43,8 @@ const Menubar = ({ activeMenu }) => {
     };
 
     return (
-        <div className="flex items-center justify-between gap-5 bg-gradient-to-r from-blue-100 via-sky-50 to-white border-b 
-        border-blue-200 shadow-md py-4 px-6">
+        <div className="flex items-center justify-between gap-5 bg-gradient-to-r from-blue-400 via-sky-40 to-pink-200 border-b 
+        border-blue-200 shadow-md py-2 px-6">
             {/* Left side - Menu button and title */}
             <div className="flex items-center gap-5">
                 <button
@@ -60,11 +60,32 @@ const Menubar = ({ activeMenu }) => {
                     )}
                 </button>
 
-                <div className="flex items-center gap-2">
-                    <img src={assets.logo} alt="logo" className="h-10 w-10" />
-                    <span className="text-lg font-medium text-black truncate">CashFlowHub</span>
-                </div>
+                               <div className="flex items-center gap-4">
+    <img
+        src={assets.logo}
+        alt="logo"
+        className="h-20 w-20 object-contain"
+    />
+
+    <div className="flex flex-col">
+        <span className="text-2xl font-bold text-black">
+            CashFlowHub
+        </span>
+
+        <p className="text-sm font-semibold text-purple-950 tracking-wide mt-1">
+            Track • Save • Grow
+        </p>
+    </div>
+</div>
+
             </div>
+
+                   <div className="hidden lg:flex flex-1 justify-center">
+                      <p className="text-3xl font-extrabold text-blue-800  tracking-wide drop-shadow-sm">
+                           💰 Smart Finance. Better Future 🤝
+                      </p>
+                    </div> 
+
 
             {/* Right side - Avatar dropdown */}
             <div className="relative" ref={dropdownRef}>

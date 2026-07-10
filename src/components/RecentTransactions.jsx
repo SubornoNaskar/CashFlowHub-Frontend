@@ -4,7 +4,7 @@ import moment from "moment";
 
 const RecentTransactions = ({transactions, onMore}) => {
     return(
-        <div className="card">
+        <div className="card bg-gradient-to-r from-blue-200 via-sky-100 to-white border border-blue-300 shadow-md">
             <div className="flex items-center justify-between">
                 <h4 className="text-lg">Recent Transactions</h4>
 

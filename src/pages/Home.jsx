@@ -71,7 +71,7 @@ const Home = () => {
                         {/* Recent transactions */}
                         <RecentTransactions
                             transactions={dashboardData?.recentTransactions}
-                            onMore={() => navigate("/expense")}
+                            onMore={() => navigate("/filter")}
                         />
 
                         {/* finance overview chart */}
@@ -108,57 +108,3 @@ export default Home;
 
 
 
-// import Dashboard from "../components/Dashboard.jsx";
-// import {useUser} from "../hooks/useUser.jsx";
-// // import InfoCard from "../components/InfoCard.jsx";
-// import {Coins, Wallet, WalletCards} from "lucide-react";
-// //import {addThousandsSeparator} from "../util/util.js";
-// import {useNavigate} from "react-router-dom";
-// import {useEffect, useState} from "react";
-// import axiosConfig from "../util/axiosConfig.jsx";
-// import {API_ENDPOINTS} from "../util/apiEndpoints.js";
-// import toast from "react-hot-toast";
-// // import RecentTransactions from "../components/RecentTransactions.jsx";
-// // import FinanceOverview from "../components/FinanceOverview.jsx";
-// // import Transactions from "../components/Transactions.jsx";
-
-// const Home = () => {
-//     useUser();
-
-//     const navigate = useNavigate();
-//     const [dashboardData, setDashboardData] = useState(null);
-//     const [loading, setLoading] = useState(false);
-
-//     const fetchDashboardData = async () => {
-//         if (loading) return;
-
-//         setLoading(true);
-
-//         try {
-//             const response = await axiosConfig.get(API_ENDPOINTS.DASHBOARD_DATA);
-//             if (response.status === 200) {
-//                 setDashboardData(response.data);
-//             }
-//         }catch (error) {
-//             console.error('Something went wrong while fetching dashboard data:', error);
-//             toast.error('Something went wrong!');
-//         } finally {
-//             setLoading(false);
-//         }
-//     }
-
-//     useEffect(() => {
-//         fetchDashboardData();
-//         return () => {};
-//     }, []);
-
-//     return (
-//         <div>
-//             <Dashboard activeMenu="Dashboard">
-//                 this is home 
-//             </Dashboard>
-//         </div>
-//     )
-// }
-
-// export default Home;
